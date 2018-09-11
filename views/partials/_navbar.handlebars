@@ -1,0 +1,18 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo right">Logo</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+    {{#if user}}
+      <li><a href="/blogs">All Blogs</a></li>
+      <li><a href="/blogs/new">Add Blog</a></li>
+      <li><a href="/users/logout">Log Out</a></li>
+    {{else}}
+      <li><a href="/">Home</a></li>
+      <li><a href="/blogs">All Blogs</a></li>
+      <li><a href="/blogs/new">Add Blog</a></li>
+      <li><a href="/users/register">Register</a></li>
+      <li><a href="/users/login">Login</a></li>
+    {{/if}}
+    </ul>
+  </div>
+</nav>
