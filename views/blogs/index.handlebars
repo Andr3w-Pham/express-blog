@@ -4,12 +4,14 @@
     <h4>{{title}}</h4>
     <p>{{description}}</p>
     <br>
-    <button class="btn black"><a href="/blogs/{{id}}/edit">Edit</a></button>
-    <br><br>
-    <form class="" action="/blogs/{{id}}?_method=DELETE" method="post">
-      <input type="hidden" name="_method" value="DELETE">
-      <button class="waves-effect waves-light btn" type="submit" name="button">Delete</button>
-    </form>
+
+      <button class="btn black"><a href="/blogs/{{id}}/edit">Edit</a></button>
+      <br><br>
+      <form class="" action="/blogs/{{id}}?_method=DELETE" method="post">
+        <input type="hidden" name="_method" value="DELETE">
+        <button class="waves-effect waves-light btn" type="submit" name="button">Delete</button>
+      </form>
+    
   </div>
 </div>
 {{else}}

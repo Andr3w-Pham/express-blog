@@ -15,13 +15,13 @@ const User = mongoose.model('users');
 // Registration Route
 // dont need to put /users/register because its already set in app.js
 // instead we just need /register
-router.get('/register', (req, res) => {
+router.get('/register', (req, res,) => {
 
   res.render('users/register');
 });
 
 // post route to capture data from the form and save to db
-router.post('/register', (req, res) => {
+router.post('/register', (req, res, email) => {
   // res.send('In the post route');
   console.log(req.body);
   let errors = [];
@@ -49,6 +49,7 @@ router.post('/register', (req, res) => {
         errors: errors
       });
     } else {
+
       // check if email already exists in DB
       // res.send('Passed');
       let newUser = {
